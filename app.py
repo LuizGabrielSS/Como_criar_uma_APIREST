@@ -41,3 +41,8 @@ def mais_segura():
 def recuperar():
     dados = request.get_json()
     return "você enviou"+dados
+
+if __name__ == '__main__':
+    host="Servidor da api, ou seja, o IP da maquina onde ela esta rodando"
+    port="porta onde deseja rodar a API, caso não passe nenhum valor, ela ira rodar na porta 5000"
+    app.run(host,port,debug=True)
